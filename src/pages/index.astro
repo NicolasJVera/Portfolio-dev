@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro'
+import SocialPill from '../components/icons/SocialPill.astro';
+import Github from '../components/icons/Github.astro';
+import Mail from '../components/icons/Mail.astro';
+import Experience from '../components/experience.astro';
+import Container from '../components/Container.astro';
+import BriefCase from '../components/icons/BriefCase.astro';
+import ProyectIcon from '../components/icons/ProyectIcon.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout 
+	title="Porfolio de Nicolas Vera - Desarrollador y Programador Full Stack Jr."
+	description="Contrata a Nicolas Vera para crear tu pagina web. Desarrollador Web y Programador Full Stack Jr. Especializado en Paginas Web Front-end y Back-end"
+		>
+	<main class="px-4" id="sobremi">
+		<Container class="py-44 pb-32">
+			<img 
+				class="rounded-full size-12 mb-4" 
+				src="" 
+				alt="porfolio foto"
+			/>
+
+			<h1
+			class="text-white text-2xl lg:text-5xl font-bold md:text-4xl flex flex-row gap-x-4 pb-6 lg:pb-10"
+			>
+				Hola, soy Nicolas Vera <a 
+				href="https://www.linkedin.com/in/nicolas-vera-javier/" 
+				target="_blank" 
+				rel="noopener"
+				class="flex justify-center items-center" ><Badge>Disponible para trabajar</Badge> 
+				</a>
+			</h1>
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]:">
+				<span class=" text-yellow-200/90 opacity-80">Desarrollador web y Programador Full Stack.</span> 
+			<span class="text-red-100/90">De Buenos Aires, Argentina 🇦🇷.</span> Me estoy especializando en hacer paginas web con diferentes tecnologias. 
+			Actualmente estoy estudiando React.
+			</h2>
+
+			<nav class="flex gap-4 mt-7 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/nicolas-vera-javier/">
+						<LinkedIn class="size-4 lg:size-6"/>
+    					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/NicolasJVera">
+					<Github class="size-4 lg:size-6"/>
+					GitHub
+				</SocialPill>
+				<SocialPill href="https://github.com/NicolasJVera">
+					<Mail class="size-4 lg:size-6"/>
+					nico03veraa@gmail.com
+				</SocialPill>
+			</nav>
+		</Container>
+
+	   <Container id="experiencia">
+		<h2 class="text-3xl font-semibold mb-7 flex gap-x-3 items-center">
+			<BriefCase class="size-7" />
+			Experiencia
+		</h2>
+		<Experience />
+	   </Container>
+
+	   <Container id="proyectos">
+		<h2 class="text-3xl font-semibold mb-7 flex gap-x-3 items-center">
+			<ProyectIcon class="size-10" />
+			Proyectos
+		</h2>
+		<Projects />
+	   </Container>
+	</main>
+</Layout>
+

@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+export const EXPERIENCIE = [
+    {
+        date: 'Actualmente...',
+        title: 'Portfolio Web con Astro, HTML, CSS y TailwindCSS ',
+        description: 
+        'Creando mi Porfolio web actualizado 2024, con Astro, HTML, CSS y Tailwind CSS.',
+        link: '#'
+    },
+    {
+        date: 'Actualmente...',
+        title: 'Curso de React - Udemy',
+        description: 
+        'Aprendiendo React: Hooks, State, MERN, Next.js, Remix Run, Redux, Tailwind CSS, Prisma y mucho más',
+    },
+    {
+        date: 'Octubre 2202 - Mayo 2023',
+        title: 'Curso #YoProgramo - Full Stack Jr. De Argentina Programa 4.0',
+        description: 
+        'Curso donde aprendi y profundice conocimiento en tecnologias como: Angular, Typescript, JS, SQL y mas para convertirme en Programador Web Full Stack Jr.',
+        link: '#'
+    },
+    {
+        date: 'Octbure 2021 - Diciembre 2021',
+        title: 'Desarrollo Web - Coderhouse',
+        description: 
+        'Curso de Desarrollo Web, en el cual aprendí a usar las tecnologias como: HTML, CSS y frameworks como Bootstrap y Sass',
+    },
+]
+---
+
+
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+    {
+        EXPERIENCIE.map(experiencie => (
+        <li class="mb-10 ms-4">
+            <ExperienceItem {... experiencie} />
+           </li>
+        ))
+    }
+</ol>
+
